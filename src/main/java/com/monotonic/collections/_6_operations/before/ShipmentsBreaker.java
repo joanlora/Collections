@@ -26,5 +26,13 @@ public class ShipmentsBreaker
         List<Product> lightVanProducts = shipment.getLightVanProducts();
         System.out.println("lightVanProducts = ");
         lightVanProducts.forEach(System.out::println);
+
+        lightVanProducts.remove(window); // breaks encapsulation - JL 1/26/23
+
+        System.out.println("lightVanProducts = ");
+        lightVanProducts.forEach(System.out::println);
+
+        System.out.println("shipment = ");
+        shipment.forEach(System.out::println);
     }
 }
