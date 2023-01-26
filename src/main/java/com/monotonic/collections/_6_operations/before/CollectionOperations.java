@@ -30,7 +30,7 @@ public class CollectionOperations
         /*Collections.rotate(products,2); // .rotate has loads of algo methods
         System.out.println(products); // rotates moves the end element to the front of the ArrayList*/
 
-        //System.out.println(products);
+        //System.out.println(products);//
     }
 
     private static List<Character> makeAlphabet()
