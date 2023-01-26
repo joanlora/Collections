@@ -18,6 +18,19 @@ public class CollectionOperations
     {
         var products = new ArrayList<>(List.of(window, floorPanel, door));
         System.out.println(products);
+
+        var alphabet = makeAlphabet();
+        System.out.println(alphabet);
+
+        int index = Collections.binarySearch(alphabet,'A');
+        System.out.println(index);
+
+        //Collections.shuffle(products, ThreadLocalRandom.current()); // .shuffle randomly changes elements in ArrayList using java random class
+
+        /*Collections.rotate(products,2); // .rotate has loads of algo methods
+        System.out.println(products); // rotates moves the end element to the front of the ArrayList*/
+
+        //System.out.println(products);
     }
 
     private static List<Character> makeAlphabet()
